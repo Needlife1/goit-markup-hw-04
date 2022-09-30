@@ -55,7 +55,9 @@ body {
 
 /* -----------Header----------- */
 
-
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
 
 .header-container {
     display: flex;
@@ -158,6 +160,11 @@ body {
     background-color: var(--hero-footer-color);
     padding: 200px 0;
     text-align: center;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
 }
 
@@ -194,9 +201,7 @@ body {
     min-width: 216px;
     border: none;
     padding: 10px 32px;
-
-
-
+    margin-top: 30px;
 }
 
 .hero-button:hover,
@@ -360,7 +365,7 @@ body {
     color: var(--primary-white-color);
 }
 
-.footer-item:not(:last-chaild) {
+.footer-item:not(:last-child) {
     margin-bottom: 9px;
 }
 
@@ -444,8 +449,8 @@ body {
 
 
 
-.button :focus,
-.button :hover {
+.button:focus,
+.button:hover {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
 
@@ -464,12 +469,10 @@ body {
 
 .portfolio-info {
     padding: 20px 24px;
-    max-width: 370px;
-    background: #FFFFFF;
     border: 1px solid #EEEEEE;
 }
 
-.portfolio- .portfolio-titel {
+.portfolio-titel {
     font-weight: 700;
     font-size: 18px;
     line-height: 2.00;
@@ -484,6 +487,5 @@ body {
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--text-color);
-    margin-bottom: 20px;
     margin-top: 4px;
 }
